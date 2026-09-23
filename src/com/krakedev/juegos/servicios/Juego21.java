@@ -91,6 +91,7 @@ public class Juego21 {
 		}
 	}
 	
+	
 	//Metodo validar Ganador
 	public ArrayList<Jugador> validarGanador(){
 		ArrayList <Jugador> ganadores = new ArrayList<Jugador>();
@@ -106,6 +107,5 @@ public class Juego21 {
 		}
 		return ganadores;
 	}
-	
 }
 
