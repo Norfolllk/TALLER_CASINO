@@ -107,5 +107,23 @@ public class Juego21 {
 		}
 		return ganadores;
 	}
+	
+	//Metodo Jugar
+	public ArrayList<Jugador> jugar() {
+		ArrayList <Jugador> ganadores = new ArrayList<Jugador>();
+		for(int i = 0 ; i<20 ;i++) {
+			System.out.println("RONDA: "+ (i+1));
+			repartirRonda();
+			for(Jugador jugador : jugadores) {
+				System.out.println(jugador.getNickname() + "-" + jugador.getPuntajeCartas());
+			}
+			ganadores = validarGanador();
+			if(ganadores.size() >= 1 ) {
+				break;
+			}
+		}return ganadores;
+	}
+	
 }
+
 
